@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOHOLST WEB</title>
+  <!-- Link to external CSS (keeps styling) -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Adapted from a basic W3Schools HTML template -->
+</head>
+<body>
+  <!-- This is the navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="#home" data-target="home">Home</a></li>
+      <li><a href="#about" data-target="about">About</a></li>
+      <li><a href="#contact" data-target="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections: only one is visible at a time -->
+  <main class="container">
+    <section id="home" class="page">
+      <h1>My First Heading</h1>
+      <p>My first paragraph.</p>
+      <button class="button" id="homeButton">Click Me</button>
+    </section>
+
+    <section id="about" class="page" hidden>
+      <h1>About</h1>
+      <p>This section uses the same simple structure as W3Schools examples.</p>
+      <button class="button" id="aboutButton">Click Me</button>
+    </section>
+
+    <section id="contact" class="page" hidden>
+      <h1>Contact</h1>
+      <p>Fill the form and click Send (demo only).</p>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@email.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Message content"></textarea>
+
+        <button type="submit" class="button">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Boholst WEB</footer>
+
+  <!-- Link sa external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

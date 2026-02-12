@@ -1,0 +1,40 @@
+/* styles.css - Simple and clean styles (English comments) */
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  color: #333;
+}
+
+/* Navigation bar */
+nav { background: #2c3e50; padding: 10px 20px; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 12px; justify-content: center; }
+nav a { color: #ecf0f1; text-decoration: none; padding: 8px 10px; border-radius: 4px; }
+nav a:hover, nav a.active { background: #34495e; }
+
+/* Centered container */
+.container { max-width: 800px; margin: 36px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.container h1 { color: #2c3e50; margin-top: 0; }
+.container p { color: #555; line-height: 1.5; }
+
+/* Sections */
+.page { text-align: center; }
+
+/* Form */
+label { display: block; margin: 10px 0 6px; color: #333; text-align: left; }
+input, textarea { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+
+/* Button */
+.button { background: #2980b9; color: #fff; border: none; padding: 10px 14px; border-radius: 6px; cursor: pointer; font-size: 15px; }
+.button:hover { background: #2573a6; }
+
+/* Footer */
+footer { text-align: center; color: #888; margin: 18px 0; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container { margin: 18px; padding: 14px; }
+  nav ul { gap: 8px; }
+}
